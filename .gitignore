@@ -48,3 +48,6 @@ config.ini
 
 # 隐私
 idcard.json
+get-pip.py
+muggle_ocr-1.0.3-py3-none-any.whl
+Polygon3-3.0.8-cp38-cp38-win_amd64.whl
