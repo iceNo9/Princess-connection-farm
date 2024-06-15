@@ -323,8 +323,8 @@ class Bot:
                                f'目前农场信息：\n'
                                f'\n{message}\n'
                                f'目前状态信息：\n'
-                               f'\n{acc_state}\n'
-                               f'[来自GITHUB一款开源脚本 (// . //)](https://github.com/SimonShi1994/Princess-connection-farm)\n ',
+                               f'\n{acc_state}\n',
+                            #    f'[来自GITHUB一款开源脚本 (// . //)](https://github.com/SimonShi1994/Princess-connection-farm)\n ',
                     'parse_mode': 'Markdown',
                     'disable_notification': tg_mute,
                 }
@@ -359,8 +359,8 @@ class Qywx(Bot):
         - {self.cpu_info}\n- {self.memory_info}\n
         ——————————————————\n
         目前农场信息：\n\n{self.message}\n
-        目前状态信息：\n\n{acc_state}\n
-        [来自GITHUB一款开源脚本 (// . //)](https://github.com/SimonShi1994/Princess-connection-farm)\n"""
+        目前状态信息：\n\n{acc_state}\n"""
+        # [来自GITHUB一款开源脚本 (// . //)](https://github.com/SimonShi1994/Princess-connection-farm)\n"""
 
     def send_message(self, msg, msgtype):
         upload_token = self.get_upload_token(self.corpid, self.corpsecret)
