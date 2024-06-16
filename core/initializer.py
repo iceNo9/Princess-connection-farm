@@ -6,6 +6,7 @@ import pathlib
 import sys
 import time
 import traceback
+import subprocess
 from multiprocessing import Process
 from multiprocessing.managers import SyncManager
 from queue import PriorityQueue
@@ -890,6 +891,7 @@ class PCRInitializer:
             self.write_log(f"设备 {serial} 重启失败！")
         elif status == "sleep":
             self.write_log(f"设备 {serial} 闲置，自动关闭")
+            subprocess.call('taskkill /f /im py3.exe', shell=True)
         elif status == "launch_success":
             self.write_log(f"设备 {serial} 启动成功！")
         elif status == "launch_fail":
