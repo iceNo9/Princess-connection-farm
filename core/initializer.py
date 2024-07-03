@@ -1438,6 +1438,7 @@ class Schedule:
                     # 记录设置2：运行完成后立刻restart
                     self.run_status[rec] = 1
                     self.log("info", f"计划** {nam} - {bat} **已经完成")
+                    pcr_log("admin").server_bot("STATE", acc_state="Finish")
                     self._set_status()
                     self.checked_status[rec] = True
                     continue
