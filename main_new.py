@@ -539,6 +539,7 @@ def PrintQQ():
 
 
 def Start_App():
+    ClearError(None)
     if is_ocr_running():
         wprint("app 已经启动！")
         return
