@@ -1,6 +1,7 @@
  <img src="webclient/src/assets/logo.jpg" width = "80%" height = "80%" alt="LOGO" align=center />
 
-# Princess connection 公主连结农场脚本v2.8.20240718
+# Princess connection 公主连结农场脚本v2.8.20240831
+
 
 ![](https://img.shields.io/badge/license-GPL--3.0-blue)![](https://img.shields.io/badge/opencv-2.0-blue)![](https://img.shields.io/badge/UIAutomator-2-blue)
 
@@ -332,6 +333,28 @@ Tips:QQPush机器人经常换号 ~~Wechat在4月底将全部弃用，转Wework~~
 
 <details>
 <summary>更新日志（点击展开）</summary>
+
+2024/08/31 By UVJkiNTQ
+
+- 惯例更新
+  - 活动`真步真步奇妙之旅！旅行的少女与世界尽头的大树`更新
+- BUG修复
+  - `s14`任务参数错误
+
+2024/08/30 By UVJkiNTQ
+
+- 功能更新
+  - `s14`，主线扫荡任务增加，即主线右上角的选图扫荡，常用于收集碎片。使用前请预先选好对应的图
+
+2024/08/03 By UVJkiNTQ
+
+- 惯例更新
+  - 角色识别资源更新
+
+2024/08/02 By UVJkiNTQ
+
+- 惯例更新
+  - 活动`点滴夏日回忆 在海边发现的小小幸福`
 
 2024/07/18 By UVJkiNTQ
 
