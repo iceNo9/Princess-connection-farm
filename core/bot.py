@@ -47,11 +47,11 @@ class Bot:
         self.req_post.mount('https://', HTTPAdapter(max_retries=5))
         # https://sctapi.ftqq.com/ server酱Turbo版本
         self.server_nike_url = f"https://sctapi.ftqq.com/{s_sckey}.send"
-        self.lev_0 = ['info', 'warning', 'error', 'STATE', '']
-        self.lev_1 = ['warning', 'error', 'STATE', '']
-        self.lev_2 = ['error', 'STATE', '']
+        self.lev_0 = ['info', 'warning', 'error', 'STATE', 'FINISH', '']
+        self.lev_1 = ['warning', 'error', 'STATE', 'FINISH', '']
+        self.lev_2 = ['error', 'STATE', 'FINISH', '']
         # 3为0级消息，是消息队列的最高级别,无视log_cache堵塞
-        self.lev_3 = ['STATE', '']
+        self.lev_3 = ['STATE', 'FINISH', '']
         # 日志级别
         self.lev_dic = {
             '0': self.lev_0,
