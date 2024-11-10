@@ -1,6 +1,6 @@
  <img src="webclient/src/assets/logo.jpg" width = "80%" height = "80%" alt="LOGO" align=center />
 
-# Princess connection 公主连结农场脚本v2.8.20240831
+# Princess connection 公主连结农场脚本v2.8.20241102
 
 
 ![](https://img.shields.io/badge/license-GPL--3.0-blue)![](https://img.shields.io/badge/opencv-2.0-blue)![](https://img.shields.io/badge/UIAutomator-2-blue)
@@ -333,6 +333,31 @@ Tips:QQPush机器人经常换号 ~~Wechat在4月底将全部弃用，转Wework~~
 
 <details>
 <summary>更新日志（点击展开）</summary>
+
+2024/11/02 By UVJkiNTQ
+
+- BUG修复
+  - 修复UI变更导致的商店相关任务错误
+  - 修复UI变更导致的角色相关任务错误，优化了部分逻辑
+
+2024/10/31 By UVJkiNTQ
+
+- 惯例更新
+  - 活动`部落精神 高举之剑与荣耀之桥`
+- BUG修复
+  - 修复主线按钮变化带来的问题
+
+2024/09/30 By UVJkiNTQ
+
+- 惯例更新
+  - 复刻活动`至高的庆典与少女隐藏的爱好`
+
+2024/09/18 By UVJkiNTQ
+
+- 惯例更新
+  - 复刻活动`大江户的非法病历 Dr.深月的诊疗室`
+  - 主线`60`图
+
 
 2024/08/31 By UVJkiNTQ
 
