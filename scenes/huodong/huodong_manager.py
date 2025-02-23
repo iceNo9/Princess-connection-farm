@@ -7,6 +7,15 @@ from scenes.huodong.huodong_base import HuodongMapBase
 
 def get_huodong_by_code(code: str):
     HUODONG_CODE = {
+        "20250210": Map20240207,
+        "20250205": Map20240131,
+        "20250203": Map20250203,
+        "20250127": Map20250127,
+        "20250116": Map20231229,
+        "20241231": Map20241231,
+        "20241216": Map20231130,
+        "20241129": Map20241129,
+        "20241118": Map20231031,
         "20241031": Map20241031,
         "20241017": Map20230930,
         "20240930": Map20240930,
@@ -98,6 +107,66 @@ N1： Normal图如果分段，第1段最后一图的图号
     ...
 '''
 
+
+class Map20250203(HuodongMapBase):
+    N_slice = 2
+    NAME = "解放伊甸园 在终将再会的未来 后篇"
+    XY11 = (245, 251)
+    XY21 = (93, 385)
+    XY_VH_BOSS = (857, 314)
+    HARD_COORD = {
+        1: (91, 313),
+        2: (245, 212),
+        3: (303, 400),
+        4: (526, 393),
+        5: (699, 259),
+    }
+    XINLAI = False
+
+
+class Map20250127(HuodongMapBase):
+    N_slice = 1
+    NAME = "解放伊甸园 在终将再会的未来 前篇"
+    XY11 = (163, 373)
+    XY_VH_BOSS = (825, 297)
+    HARD_COORD = {
+        1: (60, 247),
+        2: (139, 371),
+        3: (377, 403),
+        4: (506, 236),
+        5: (836, 281),
+    }
+    XINLAI = False
+
+
+class Map20241231(HuodongMapBase):
+    N_slice = 2
+    NAME = "温泉忘年奇谭 为新年的日出干杯"
+    XY11 = (127, 413)
+    XY_VH_BOSS = (825, 297)
+    HARD_COORD = {
+        1: (70, 382),
+        2: (198, 198),
+        3: (408, 235),
+        4: (512, 379),
+        5: (630, 218),
+    }
+    XINLAI = False
+
+
+class Map20241129(HuodongMapBase):
+    N_slice = 1
+    NAME = "快乐进行时 幸福的双子天使与圣诞夜礼物"
+    XY11 = (188, 369)
+    XY_VH_BOSS = (835, 301)
+    HARD_COORD = {
+        1: (60, 248),
+        2: (142, 369),
+        3: (375, 400),
+        4: (500, 223),
+        5: (646, 336),
+    }
+    XINLAI = False
 
 class Map20241031(HuodongMapBase):
     N_slice = 2

@@ -1,6 +1,6 @@
  <img src="webclient/src/assets/logo.jpg" width = "80%" height = "80%" alt="LOGO" align=center />
 
-# Princess connection 公主连结农场脚本v2.8.20241102
+# Princess connection 公主连结农场脚本v2.8.20250204
 
 
 ![](https://img.shields.io/badge/license-GPL--3.0-blue)![](https://img.shields.io/badge/opencv-2.0-blue)![](https://img.shields.io/badge/UIAutomator-2-blue)
@@ -333,6 +333,59 @@ Tips:QQPush机器人经常换号 ~~Wechat在4月底将全部弃用，转Wework~~
 
 <details>
 <summary>更新日志（点击展开）</summary>
+
+2025/02/04 By UVJkiNTQ
+- 惯例更新
+  - 活动`解放伊甸园 在终将再会的未来 后篇`
+  - 复刻活动`「Re:member 我的愿望所编织的未来」`
+
+*请注意2025/2/5更新后将有活动复刻`「Re:member 我的愿望所编织的未来」（前篇）`，默认最新活动，记得通过任务配置指定入口(entrance_ind)。
+
+2025/01/27 By UVJkiNTQ
+新春快乐！
+
+- 惯例更新
+  - 活动`解放伊甸园 在终将再会的未来 前篇`
+- 功能更新
+  - 主线刷碎片`s14`支持选择预设槽位
+
+2025/01/11 By SilentSelene
+- 功能优化
+  - 对探索收益并重新出发进行优化，现在能够处理特殊事件，并且不需要在设置中关闭弹窗，但仍然需要自行完成首次出发
+- 惯例更新
+  - 复刻活动`新年美食记忆·雪菲的大作战`
+
+2025/01/02 By SilentSelene
+
+- BUG修复
+  - 尝试修复EX装备实装后自动推图报错的问题,并对自动推图中断进行处理
+
+2024/12/31 By UVJkiNTQ
+新年快乐！
+
+- 惯例更新
+  - 活动`温泉忘年奇谭 为新年的日出干杯`
+
+2024/12/01 By UVJkiNTQ
+
+- 功能更新
+  - 添加任务`r14`，支持收取探索收益并重新出发，并会处理event收益。需要自行完成首次出发，并在设置中关闭进入探索界面时的弹窗。
+
+
+2024/11/30 By UVJkiNTQ
+
+- 惯例更新
+  - 复刻活动`快乐进行时 幸福的双子天使与圣诞夜礼物`
+- BUG修复
+  - 角色升级相关任务优化了部分逻辑
+
+
+2024/11/19 By UVJkiNTQ
+
+- 惯例更新
+  - 复刻活动`魔法少女外传`
+  - 主线`61`图
+
 
 2024/11/02 By UVJkiNTQ
 

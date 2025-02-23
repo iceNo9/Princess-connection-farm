@@ -626,7 +626,8 @@ FIGHT_BTN = {
     "menu": p(img="img/fight/menu.bmp", at=(871, 18, 928, 32)),
     "qwjsyl": p(576, 495, img="img/fight/qwjsyl.bmp", at=(392, 457, 948, 528)),  # 前往角色一览
     "win": p(img="img/fight/win.bmp", at=(400, 6, 551, 127)),  # 过关的帽子
-    "zhandoukaishi": p(834, 453, img="img/fight/zhandoukaishi.bmp", at=(761, 431, 911, 472)),
+    # "zhandoukaishi": p(834, 453, img="img/fight/zhandoukaishi.bmp", at=(761, 431, 911, 472)),
+    "zhandoukaishi": p(848, 451, img="img/fight/zhandoukaishi.bmp", at=(789, 433, 907, 469)),
     "duiwubianzu": p(img="img/fight/duiwubianzu.bmp", at=(433, 31, 520, 53)),
     "xuanguan_quxiao": p(665, 455, img="img/ui/quxiao2.bmp", at=(597, 440, 736, 470)),  # 选关界面（选择使用扫荡券）右下角的取消
     "upperright_stars":  # “挑战”页面右上角的星星位置
@@ -1469,11 +1470,15 @@ MAOXIAN_BTN = {
     "auto_advance_on": p(724, 335, img="img/maoxian/auto_advance_on.bmp", at=(688, 307, 760, 363)),
     "auto_advance_off": p(724, 338, img="img/maoxian/auto_advance_off.bmp", at=(686, 308, 762, 368)),
     "to_set_auto_advance": p(836, 412, img="img/maoxian/to_set_auto_advance.bmp", at=(766, 403, 907, 421)),
-    "auto_advance_next": p(832, 448, img="img/maoxian/auto_advance_next.bmp", at=(762, 404, 903, 493)),
+    # "auto_advance_next": p(832, 448, img="img/maoxian/auto_advance_next.bmp", at=(762, 404, 903, 493)),
+    "auto_advance_next": p(843, 439, img="img/maoxian/auto_advance_next.bmp", at=(777, 404, 909, 475)),
     "auto_advance_settings_title": p(488, 42, img="img/maoxian/auto_advance_settings_title.bmp", at=(416, 29, 560, 56)),
     "without_buy_ap": p(482, 477, img="img/maoxian/without_buy_ap.bmp", at=(398, 464, 566, 491)),
     "auto_advance_buy_ap": p(697, 477, img="img/maoxian/auto_advance_buy_ap.bmp", at=(637, 462, 758, 492)),
     "auto_advance_fight": p(588, 479, img="img/maoxian/auto_advance_fight.bmp", at=(531, 464, 645, 495)),
+    "auto_advance_stop": p(479, 146, img="img/maoxian/auto_advance_stop.bmp", at=(411, 133, 548, 159)),
+    "auto_advance_end": p(479, 145, img="img/maoxian/auto_advance_end.bmp", at=(413, 133, 545, 158)),
+    "auto_advance_confirm": p(477, 369, img="img/maoxian/auto_advance_confirm.bmp", at=(455, 358, 499, 380)),
 
     "auto_advance_mainline_feature": p(161, 324, img="img/maoxian/auto_advance_mainline_feature.bmp",
                                        at=(37, 311, 286, 338)),
@@ -1485,6 +1490,28 @@ MAOXIAN_BTN = {
     "buy_ap_success_confirm": p(478, 369),
     "saodangquan": p(918, 141, img="img/saodangquan.bmp", at=(902, 126, 935, 156)),
     "guankayilan": p(481, 42, img="img/maoxian/guankayilan.bmp", at=(437, 28, 526, 57)),
+    "tanxian": p(560, 319, img="img/maoxian/tanxian.bmp", at=(539, 308, 582, 330)),
+}
+
+TANXIAN_BTN = {
+    "tanxian_logo": p(70, 29, img="img/tanxian/tanxian_logo.bmp", at=(1, 5, 139, 54)),
+    # "event_notice": p(938, 213, img="img/tanxian/event_notice.bmp", at=(923, 196, 953, 230)),
+    "event_notice": p(926, 216, img="img/tanxian/event_notice.bmp", at=(921, 197, 932, 235)),
+    "event_map": p(img="img/tanxian/event_map.bmp"),
+    "event_map_sp": p(img="img/tanxian/event_map_sp.bmp"),
+    "event_map_white": p(img="img/tanxian/event_map_white.bmp"),
+    "skip": p(900, 39, img="img/tanxian/skip.bmp", at=(877, 25, 923, 53)),
+    "skip2": p(873, 53, img="img/tanxian/skip.bmp", at=(858, 44, 889, 63)),
+    "team_notice": p(918, 82, img="img/tanxian/team_notice.bmp", at=(892, 67, 945, 98)),
+    "team_view": p(919, 91, img="img/tanxian/team_view.bmp", at=(905, 80, 934, 103)),
+    "team_view_off": p(919, 93, img="img/tanxian/team_view_off.bmp", at=(907, 82, 931, 105)),
+    "confirm_back": p(589, 476, img="img/tanxian/confirm_back.bmp", at=(521, 461, 657, 492)),
+    "tiaoguowanbi": p(820, 493, img="img/tanxian/tiaoguowanbi.bmp", at=(772, 478, 868, 508)),
+    "chongxinchufa": p(822, 492, img="img/tanxian/chongxinchufa.bmp", at=(777, 477, 868, 507)),
+    "chufa": p(811, 477, img="img/tanxian/chufa.bmp", at=(783, 461, 839, 493)),
+    "adventure_dest": p(95, 450, img="img/tanxian/adventure_dest.bmp", at=(53, 442, 137, 459)),
+    "have_team_back": p(474, 77, img="img/tanxian/have_team_back.bmp", at=(421, 68, 527, 86)),
+    "no_team_back": p(474, 76, img="img/tanxian/no_team_back.bmp", at=(379, 67, 569, 86)),
 }
 
 ZHUXIAN_ID = {
@@ -1548,7 +1575,7 @@ ZHUXIAN_ID = {
     58: p(img="img/zhuxian/58L.bmp", at=(60, 57, 178, 78)),
     59: p(img="img/zhuxian/59L.bmp", at=(60, 56, 179, 77)),
     60: p(img="img/zhuxian/60L.bmp", at=(59, 55, 181, 77)),
-
+    61: p(img="img/zhuxian/61L.bmp", at=(61, 57, 175, 74)),
 }
 
 MAX_MAP = max(ZHUXIAN_ID)
@@ -1642,7 +1669,7 @@ ZHUXIAN_KLSML_ID = {
 }
 ZHUXIAN_KWDST_ID = {
     60: p(img="img/zhuxian/60R.bmp", at=(183, 60, 234, 77)),
-
+    61: p(img="img/zhuxian/61R.bmp", at=(192, 59, 229, 76)),
 }
 
 ZHUXIAN_SECOND_ID = {
@@ -1667,7 +1694,7 @@ ZHUXIAN_SECOND_ID = {
     (54, 55): ZHUXIAN_TTDSHA_ID,
     (56, 57): ZHUXIAN_ALKSSD_ID,
     (58, 59): ZHUXIAN_KLSML_ID,
-    (60,): ZHUXIAN_KWDST_ID,
+    (60, 61): ZHUXIAN_KWDST_ID,
 }
 
 NORMAL_COORD = {
@@ -2885,6 +2912,26 @@ NORMAL_COORD = {
             1: p(179, 390, name="60-1"),
         },
     },
+    61: {
+        "right": {
+            14: p(819,206, name="61-14"),
+            13: p(748, 318, name="61-13"),
+            12: p(623, 359, name="61-12"),
+            11: p(448, 363, name="61-11"),
+            10: p(622, 218, name="61-10"),
+            9: p(480, 229, name="61-9"),
+            8: p(352, 170, name="61-8"),
+        },
+        "left": {
+            7: p(760, 295, name="61-7"),
+            6: p(598, 222, name="61-6"),
+            5: p(678, 379, name="61-5"),
+            4: p(513, 338, name="61-4"),
+            3: p(370, 356, name="61-3"),
+            2: p(275, 187, name="61-2"),
+            1: p(164, 408, name="61-1"),
+        },
+    },
 }
 RANKS_DICT = {
     1: p(img="img/ranks/1.bmp", at=(217, 110, 275, 135)),
@@ -2911,6 +2958,8 @@ RANKS_DICT = {
     22: p(img="img/ranks/22.bmp", at=(209, 105, 285, 128)),
     23: p(img="img/ranks/23.bmp", at=(210, 104, 283, 126)),
     24: p(img="img/ranks/24.bmp", at=(211, 107, 283, 126)),
+# 不再更新
+
 }
 USER_DEFAULT_DICT = {
     # 给self.AR.get用的初值dict

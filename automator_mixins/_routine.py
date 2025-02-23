@@ -1,7 +1,8 @@
 import time
 
 from core.MoveRecord import movevar
-from core.constant import MAIN_BTN, JIAYUAN_BTN, NIUDAN_BTN, LIWU_BTN, RENWU_BTN, FIGHT_BTN, SHOP_BTN, MAOXIAN_BTN
+from core.constant import MAIN_BTN, JIAYUAN_BTN, NIUDAN_BTN, LIWU_BTN, RENWU_BTN, FIGHT_BTN, SHOP_BTN, MAOXIAN_BTN, \
+    TANXIAN_BTN
 from core.constant import USER_DEFAULT_DICT as UDD
 from core.cv import UIMatcher
 from core.pcr_checker import RetryNow, PCRRetry, LockMaxRetryError
@@ -901,4 +902,40 @@ class RoutineMixin(ShuatuBaseMixin):
 
         self.fclick(1, 1)
         self.lock_home()
+
+    def tanxian_oneclick(self):
+        self.lock_home()
+        TX = self.get_zhuye().goto_maoxian().goto_tanxian()   
+        if TX is not None:
+            back_done, event_done = False, False
+            while True:
+                # 队伍一览出现的话就先处理,不然先处理event
+                out = TX.check()
+                if isinstance(out, TX.TeamViewBack):
+                    out.confirm_back()
+                    back_done = True
+                if isinstance(out, TX.TanXianMenu) and not event_done:
+                    out.handle_event() 
+                    event_done = True
+                    if not back_done:
+                        # 队伍没出发的话会返回None
+                        TV = out.goto_teamview()
+                        if TV is not None:
+                            while True:              
+                                out2 = TV.check()                        
+                                if isinstance(out2, TV.TeamViewBack):
+                                    break
+                                if isinstance(out2, TV.TeamViewNoBack):
+                                    self.log.write_log("info","没有队伍归来")
+                                    out2.close()
+                                    back_done = True
+                                    break
+                        else:
+                           back_done = True
+                if back_done and event_done:
+                    self.log.write_log("info","探险处理完毕!")
+                    break
+        self.fclick(1, 1)
+        self.lock_home()
+
 

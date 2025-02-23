@@ -817,6 +817,7 @@ VALID_TASK = ValidTask() \
           ]) \
     .add("r13", "kokkoro_schedule", "可可萝日程表", "完成可可萝日程表", 
          [TaskParam("buy_mana", bool, "是否购买mana", "是否根据日程设置购买mana", False)]) \
+    .add("r14", "tanxian_oneclick", "探险收取及重新出发", "探险日常及Event处理，请关闭探险进入时的弹窗并编组完成首次三个任务") \
     .add("f1", "tianjiahaoyou", "添加好友", "按照ID添加好友。", [
     TaskParam("friend_id", str, "好友ID", "要添加的好友的数字ID")]) \
     .add("f2", "tongguoshenqing", "通过申请", "处理全部的好友申请，可以指定按前缀过滤。",
@@ -1067,7 +1068,8 @@ VALID_TASK = ValidTask() \
                                                    upgrade="尝试升级，若仍然失败则终止推图。（队伍只能为zhanli/juese/xingshu/shoucang））"))),
          ]) \
     .add("s14", "yijiansaodang", "使用自带的关卡扫荡", "需要预先选定要扫荡的主线图",
-         [TaskParam("times", int, "扫荡几次", "扫荡几次，默认3", 3)]) \
+         [TaskParam("times", int, "扫荡几次", "扫荡几次，默认3", 3),
+          TaskParam("slot", int, "使用哪组预设（1~7）", "预设", 1)]) \
     .add("hd01", "tui_hd_map_normal", "推活动普通图", "用于推N1-15。",
          [TaskParam("team_order", str, "选择队伍", "选择什么队伍来推图", default="zhanli", inputbox=TeamOrderInputer),
           TaskParam("get_zhiyuan", bool, "是否借支援", "是否借人推图", False),
